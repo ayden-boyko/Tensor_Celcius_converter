@@ -21,7 +21,7 @@ model = tf.keras.Sequential(layer1)
 #model compiled
 model.compile(loss='mean_squared_error', optimizer=tf.keras.optimizers.Adam(0.1))
 
-#train model
+#train model, 1 epoch is 1 example, 500 epcohs times 7 values means it was trained with 3500 examples
 history = model.fit(celsius_input, farenheit_output, epochs=500, verbose=False)
 print("model finished training")
 
