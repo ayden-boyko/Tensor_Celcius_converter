@@ -28,6 +28,3 @@ print("model finished training")
 
 #predict result for 100C to f
 print("100C to F is 212, Model predicted {}".format(model.predict([100.0])))
-
-
-model.compile
